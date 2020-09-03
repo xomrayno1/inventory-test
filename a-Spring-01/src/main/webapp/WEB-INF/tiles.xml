@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="master"
+		template="/views/layout/master-layout.jsp">
+		<put-attribute name="sidebar"
+			value="/views/layout/sidebar.jsp"></put-attribute>
+		<put-attribute name="top-nav"
+			value="/views/layout/top-nav.jsp"></put-attribute>
+		<put-attribute name="body"
+			value="/views/layout/body.jsp"></put-attribute>
+		<put-attribute name="footer"
+			value="/views/layout/footer.jsp"></put-attribute>
+
+	</definition>
+	<definition name="index" extends="master">
+		<put-attribute name="body" value="/views/index.jsp"></put-attribute>
+	</definition>
+	<definition name="goods-receipt-action" extends="master">
+		<put-attribute name="body" value="/views/invoice/goods-receipt-action.jsp"></put-attribute>
+	</definition>
+	<definition name="goods-receipt-list" extends="master">						
+		<put-attribute name="body" value="/views/invoice/goods-receipt-list.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="goods-issue-action" extends="master">
+		<put-attribute name="body" value="/views/invoice/goods-issue-action.jsp"></put-attribute>
+	</definition>
+	<definition name="goods-issue-list" extends="master">
+		<put-attribute name="body" value="/views/invoice/goods-issue-list.jsp"></put-attribute>
+	</definition>
+	
+	
+	<definition name="history-list" extends="master">
+		<put-attribute name="body" value="/views/history/history.jsp"></put-attribute>
+	</definition>
+	<definition name="productInStock-list" extends="master">
+		<put-attribute name="body" value="/views/product-in-stock/product-in-stock.jsp"></put-attribute>
+	</definition>
+	<definition name="productInfo-action" extends="master">
+		<put-attribute name="body" value="/views/product-info/productinfo-action.jsp"></put-attribute>
+	</definition>
+	<definition name="productInfo-list" extends="master">
+		<put-attribute name="body" value="/views/product-info/productinfo-list.jsp"></put-attribute>
+	</definition>
+	<definition name="category-action" extends="master">
+		<put-attribute name="body" value="/views/category/category-action.jsp"></put-attribute>
+	</definition>
+		<definition name="category-list" extends="master">
+		<put-attribute name="body" value="/views/category/category-list.jsp"></put-attribute>
+	</definition>
+	<definition name="access-denied" template="/view/error-page/page_403.jsp"></definition>
+	<definition name="login" template="/views/login/login.jsp"></definition>
+</tiles-definitions>
